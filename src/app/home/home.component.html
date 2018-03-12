@@ -2,8 +2,13 @@
 <div class="courses-panel">
 
     <h1>All Courses</h1>
-
-
-
+    <mat-tab-group>
+      <mat-tab label="Beginner">
+        <courses-card-list [courseList]="beginnerCourses"></courses-card-list>
+      </mat-tab>
+      <mat-tab label="Advanced">
+        <courses-card-list [courseList]="advancedCourses"></courses-card-list>
+      </mat-tab>
+      </mat-tab-group>
 </div>
 
